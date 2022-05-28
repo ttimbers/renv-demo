@@ -22,7 +22,7 @@ by double-clicking on the `*.Rproj` file.
 5. Click the "Knit" button to run the code and reproduce the analysis!
 
 
-#### Exercise 2 - Updating an renv environment
+#### Exercise 2 - Updating an `renv` environment
 
 A common task you will need to do when you collaborate is to update an renv environment as you add dependencies to your project. Let's try that now as well!
 
@@ -55,6 +55,7 @@ You should see something like this near line 381 of the `renv.lock` file:
       ]
     },
 ```
+5. To share the changes to the environment, commit the changes to the `renv.lockfile` and push them to your remote version control repository.
 
 ## License
 
