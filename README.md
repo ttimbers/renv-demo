@@ -39,7 +39,7 @@ as.markdown(search_quotes("environment"))
 to the lockfile (called `renv.lock`).
 
 4. Examine the `renv.lock` file. 
-You should see something like this near line 320 of the `renv.lock` file:
+You should see something like this near line 381 of the `renv.lock` file:
 
 ```
 "statquotes": {
@@ -47,8 +47,13 @@ You should see something like this near line 320 of the `renv.lock` file:
       "Version": "0.2.6",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "908d95ccbfd1dd274073ef07a7c93934"
-    }
+      "Hash": "d771dc735b1829ff511855197fc4c107",
+      "Requirements": [
+        "stringr",
+        "tidytext",
+        "wordcloud"
+      ]
+    },
 ```
 
 ## License
