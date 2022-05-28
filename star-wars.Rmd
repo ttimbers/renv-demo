@@ -8,6 +8,12 @@ library(cowsay)
 library(dplyr)
 library(tidyr)
 library(knitr)
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+# add fortunes code here (second exercise)
 ```
 
 ## Most accomplished
@@ -30,12 +36,12 @@ kable(accomp_pilots,
 By far, the most accomplished pilot of all is `r accomp_pilots$name[1]`. 
 He is shown below piloting a star ship.
 
-```{r top-pilot, fig.cap="Most accomplished Star Wars pilot.", out.width = "100%"}
+```{r top-pilot, fig.cap="Most accomplished Star Wars pilot.", out.width = "60%"}
 include_graphics("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ewan-mcgregor-obi-wan-1570898048.jpg")
 ```
 
 *Source: 20th Century Fox*
 
-```{r}
+```{r yoda-says}
 say("Always pass on what you have learned.", "yoda")
 ```
