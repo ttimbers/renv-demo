@@ -1,10 +1,12 @@
-# Using a project where `renv` is already setup
+# `renv` demonstration
 
 If a collaborator has already setup an renv environment for the project, 
 you can leverage this to ensure you use the dependencies, 
 and versions of those dependencies, as your collaborator 🙌
 
 ### Let's try it out!
+
+#### Exercise 1 -  Using a project where `renv` is already setup
 
 1. Click the green "Use this template" button 
 in [this repository](https://github.com/ttimbers/renv-demo) 
@@ -18,6 +20,36 @@ by double-clicking on the `*.Rproj` file.
 4. Run `renv::restore()` to restore the project library locally on your machine.
 
 5. Click the "Knit" button to run the code and reproduce the analysis!
+
+
+#### Exercise 2 - Updating an renv environment
+
+A common task you will need to do when you collaborate is to update an renv environment as you add dependencies to your project. Let's try that now as well!
+
+1. Install the [`statquotes`](https://github.com/friendly/statquotes) R package via: `install.packages("statquotes")`
+
+2. Add the following code to the code chunk on line 16 of `star-wars.Rmd`
+
+```
+library(statquotes)
+as.markdown(search_quotes("environment"))
+```
+
+3. Call `renv::snapshot()` to save the state of the project library 
+to the lockfile (called `renv.lock`).
+
+4. Examine the `renv.lock` file. 
+You should see something like this near line 320 of the `renv.lock` file:
+
+```
+"statquotes": {
+      "Package": "statquotes",
+      "Version": "0.2.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "908d95ccbfd1dd274073ef07a7c93934"
+    }
+```
 
 ## License
 

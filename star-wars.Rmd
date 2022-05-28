@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
-# add fortunes code here (second exercise)
+# add statquotes code here (second exercise)
 ```
 
 ## Most accomplished
